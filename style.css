@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+ .container{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 150px;
+    margin-left: 450px;
+    background-color: grey;
+    padding: 35px;
+    border-radius: 5px;
+}
+.box1{
+    background-color: rgb(236, 234, 230);
+    padding: 18px;
+     border: 3px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(174, 173, 173);
+    
+    
+}
+
+.input input{
+    width: 100%;
+    height: 70%;
+    font-size: 20px;
+    /* font-weight: bold; */
+    background: none;
+    border: none;
+    color: black;
+}
+.input:hover {
+    background-color: rgb(139, 138, 138);
+  }
+.input input:focus {
+    outline: none;
+  }
+.input i {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: black;
+}
+
+.click{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(168, 168, 168);
+    margin: 6px;
+}
+
+.list li{
+    position: relative;
+    background: none;
+    overflow: hidden;
+    margin: 7px;
+    padding-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    word-break: break-all;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.list li .del {
+    rotate: 45deg;
+    position: absolute;
+    right: -30px;
+  }
+
+  .list li:hover .del {
+    top: 15px;
+    right: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .pendingTasks {
+    color: black;
+    padding-right: 3px;
+  }
+  
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: rgb(105, 105, 105);
+  }
+
+
+  .checkmark {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 14px;
+    left: 4px;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .box input:checked ~ .checkmark {
+     background-color: #ffffff; 
+     
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    /* left: 50px;  */
+  }
+
+  .box .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Show the checkmark when checked */
+  .box input:checked ~ .checkmark:after {
+    display: block;
+    
+  }
+
+  #addbutton {
+    display: none;
+  }
+
+
+  .box input{
+    display: none;
+  }
